@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verzorgings Artikelen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Verzorgings Artikelen</h1>
+        <p class="curated-text">De populairste verzorgings artikelen op dit moment.</p>
+        <p>Heeft u suggesties voor nieuwe artikelen? Geef dit dan graag aan ons door!</p>
+    </header>
+
+        <!-- Navigation Section -->
+        <nav class="navigation">
+            <ul class="navigation-buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="aboutus.html">Over Ons</a></li>
+                <li><div class="header-right">
+                    <!-- Search Bar -->
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button onclick="searchProducts()">Search</button>
+            
+                    <!-- Cart Icon -->
+                    <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+                </div></li>
+                <li>
+                    <div class="nav-item">
+                        <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                            <span>Taal</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" data-lang="en">
+                                <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                            </a>
+                            <a class="dropdown-item" href="#" data-lang="nl">
+                                <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <u1 class="navigation-buttons">
+                <li><a href="toiletries.html">Verzorging</a></li>
+                <li><a href="cleaning.html">Schoonmaak</a></li>
+                <li><a href="makeup.html">Make-Up</a></li>
+                <li><a href="essentials.html">Benodigdheden</a></li>
+    
+            </ul>
+            
+        </nav>
+
+
+        
+        
+        
+
+        <div class="product-grid">
+        <div class="product-card">
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/15274324-5045158719189258.jpg" alt="Selsun Suspension">
+            <div class="product-info">
+                <span class="price">€3<span class="cents">00</span></span>
+                <p class="product-title">Oral-B Tandpasta</p>
+                <div class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="review-count">15,479</span>
+                </div>
+            </div>
+        </div>
+        
+            <div class="product-card">
+                <img src="https://cdn.broedersgezondheidswinkel.nl/images/ot/holland-pharma-280422.900x900.jpg?e=Lanczos3&q=75&crop=no&rotation=0&origin=no&v=20230501" alt="Selsun Suspension">
+                <div class="product-info">
+                    <span class="price">€5<span class="cents">00</span></span>
+                    <p class="product-title">Always Maandverband</p>
+                    <div class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="review-count">15,479</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <img src="https://media.s-bol.com/YRo5GDrArXWK/jy4LX5/550x612.jpg" alt="Selsun Suspension">
+                <div class="product-info">
+                    <span class="price">€17<span class="cents">00</span></span>
+                    <p class="product-title">Gillette Scheermesjes</p>
+                    <div class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="review-count">15,479</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.xO_wUZ7bsXNrVgVa97sXPAAAAA?rs=1&pid=ImgDetMain" alt="Selsun Suspension">
+                <div class="product-info">
+                    <span class="price">€22<span class="cents">00</span></span>
+                    <p class="product-title">Andrélon Conditioner</p>
+                    <div class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="review-count">15,479</span>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="product-card">
+                <img src="https://i.supersales.nl/p/6x-andrelon-shampoo-glans-450-ml.jpg?imgid=rsjDNdBvhDqQBAdfnAUtnWszNYmYvibQUbGGC9hLmxQ/rs:fit:1280:1280:1/aHR0cHM6Ly9wcm9kLmNkbi5wbGVpbi5ubC9wcm9kdWN0ZW4vMTAwMHgxMDAwLzk5NDU3OS5qcGc.jpg" alt="Selsun Suspension">
+                <div class="product-info">
+                    <span class="price">€22<span class="cents">00</span></span>
+                    <p class="product-title">Andrélon Shampoo</p>
+                    <div class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="review-count">15,479</span>
+                    </div>
+                </div>
+            </div>
+        
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
